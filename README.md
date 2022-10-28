@@ -1,3 +1,3 @@
-# React TypeScript Starter
+# Virtuoso Test
 
-A simple template repository for setting up React/TypeScript projects
+A proof of concept test of Virtuoso
