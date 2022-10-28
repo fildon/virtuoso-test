@@ -1,19 +1,12 @@
-import { useState } from "react";
+import { Virtuoso } from "react-virtuoso";
 
 export const App = () => {
-	const [count, setCount] = useState(0);
-
-	return (
-		<>
-			<h1>Hello world</h1>
-			<span>Click the button to prove React is working</span>
-			<button
-				onClick={() => {
-					setCount((c) => c + 1);
-				}}
-			>
-				{count}
-			</button>
-		</>
-	);
+	return <main className="stack center">
+		<h1>react-virtuoso demo</h1>
+		<p>Scroll the box below to see more items.</p>
+		<p>Inspect the rendered DOM to see how elements are added and removed in real time while scrolling.</p>
+		<section>
+			<Virtuoso style={{ height: '400px' }} totalCount={200} itemContent={index => <div>Item {index}</div>} />
+		</section>
+	</main>
 };
